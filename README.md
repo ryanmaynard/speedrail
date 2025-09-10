@@ -41,6 +41,31 @@
 - **Task Scheduling** - Cron job management (`lib/tasks/scheduler.rake`)
 
 ## 🚀 Quick Start
+
+### Option 1: Docker Setup (Recommended)
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd speedrail
+   ```
+
+2. **Run Docker setup**
+   ```bash
+   ./bin/docker-setup
+   ```
+
+3. **Start the application**
+   ```bash
+   docker-compose up
+   ```
+
+4. **Access your app**
+   - Application: http://localhost:3000
+   - Admin panel: http://localhost:3000/admin
+
+### Option 2: Local Development
+
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
@@ -65,6 +90,21 @@
 > 📚 **Need help?** Check out the comprehensive guides in the `docs/` directory for detailed tutorials and best practices.
 
 ## 💻 Development
+
+### Docker Development
+```bash
+# Start all services
+docker-compose up
+
+# Run commands in the container
+docker-compose exec web bundle exec rails console
+docker-compose exec web bundle exec rspec
+
+# Stop services
+docker-compose down
+```
+
+### Local Development
 ```bash
 bin/dev  # Starts server, frontend, and background job queue
 ```
