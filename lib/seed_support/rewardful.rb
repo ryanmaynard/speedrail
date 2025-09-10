@@ -7,7 +7,7 @@ module SeedSupport
       # save $$ by registering with link: https://www.rewardful.com/?via=speedrail
       def run
         st = ScriptTag.find_by("code ILIKE ?", '%rewardful%') || ScriptTag.new
-        st.update(name: 'Rewardful', enabled:, code:) unless st.persisted?
+        st.update(name: 'Rewardful', enabled: enabled?, code:) unless st.persisted?
       end
 
       def code
