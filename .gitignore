@@ -7,6 +7,12 @@
 # Ignore bundler config.
 /.bundle
 
+# Nix-managed gems
+/.gems
+
+# Direnv cache and profiles
+/.direnv
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*

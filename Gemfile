@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.3.5'
+ruby '3.4.5'
 
 gem 'activeadmin', '4.0.0.beta13'
 gem 'aws-sdk-s3', require: false
@@ -21,7 +21,7 @@ gem 'postmark-rails'
 gem 'pretender'
 gem 'puma', '6.4.2'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'rails', '8.0.0.rc1'
+gem 'rails', '8.0.2.1'
 gem 'redis'
 gem 'rename', '1.1.3', git: 'https://github.com/ryanckulp/rename' # remove this gem after use
 gem 'split', require: 'split/dashboard'
