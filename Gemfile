@@ -38,14 +38,14 @@ gem 'tzinfo-data', platforms: [:windows, :jruby]
 gem 'bootsnap', require: false
 
 group :development, :test do
+  gem 'brakeman', require: false # security vulnerability scanner
+  gem 'bundler-audit', require: false # dependency vulnerability scanner
   gem 'debug', platforms: [:mri, :windows]
   gem 'rubocop', require: false # code styling
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
-  gem 'brakeman', require: false # security vulnerability scanner
-  gem 'bundler-audit', require: false # dependency vulnerability scanner
 end
 
 group :development do

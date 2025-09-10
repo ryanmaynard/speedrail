@@ -15,7 +15,7 @@ module SeedSupport
         <script async src='https://r.wdfl.co/rw.js' data-rewardful='YOUR-API-KEY'></script>"
       end
 
-      def enabled
+      def enabled?
         false
       end
     end

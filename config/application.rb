@@ -33,10 +33,10 @@ module Speedrail
           # Configure specific domains for production
           origins Rails.application.credentials.allowed_origins || []
         end
-        resource '*', 
-          headers: :any, 
-          methods: [:get, :post, :patch, :put, :delete, :options],
-          credentials: false
+        resource '*',
+                 headers: :any,
+                 methods: [:get, :post, :patch, :put, :delete, :options],
+                 credentials: false
       end
     end
 
