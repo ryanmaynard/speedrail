@@ -2,5 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "actiontext.css";
-@import "trix.css";
+@import "../stylesheets/actiontext.css";
+@import "../stylesheets/trix.css";
