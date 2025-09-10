@@ -3,5 +3,5 @@
 //= link_tree ../fonts
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
-//= link tailwind/application.css
+//= link_tree ../builds .css
 //= link actiontext.css
