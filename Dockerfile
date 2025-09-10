@@ -24,8 +24,8 @@ RUN bundle config --global frozen 1 && \
 # Copy application code
 COPY . .
 
-# Precompile assets
-RUN bundle exec rails assets:precompile
+# Skip asset precompilation in Docker build
+# Assets will be compiled at runtime or in CI/CD
 
 # Expose port
 EXPOSE 3000
