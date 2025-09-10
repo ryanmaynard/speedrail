@@ -5,6 +5,7 @@ RUN apt-get update -qq && \
     apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
+    libyaml-dev \
     curl \
     git \
     && rm -rf /var/lib/apt/lists/*
@@ -17,7 +18,8 @@ COPY Gemfile Gemfile.lock ./
 
 # Install gems
 RUN bundle config --global frozen 1 && \
-    bundle install --without development test
+    bundle config set --local without 'development test' && \
+    bundle install
 
 # Copy application code
 COPY . .
