@@ -1,7 +1,7 @@
 # Speedrail
-a Rails 8 template by [@ryanckulp](https://twitter.com/ryanckulp), created to ship SaaS apps quickly. 
+a Rails 8 template created to ship SaaS apps quickly. 
 
-learn to build 3 projects with Speedrail at [24 Hour MVP](https://founderhacker.com/24-hour-mvp), or check out the [premium documentation](https://gitpaywall.com/p/ryanckulp/speedrail-docs).
+A comprehensive Rails starter template for building SaaS applications quickly.
 
 **Speedrail features**
 * rich text blog CMS
@@ -35,7 +35,7 @@ learn to build 3 projects with Speedrail at [24 Hour MVP](https://founderhacker.
 3. inspect, then save/close the generated credentials file
 4. `cd new_app_name`
 
-**For detailed, step by step tutorials to using Speedrail, get lifetime access to the [Speedrail Docs](https://gitpaywall.com/p/ryanckulp/speedrail-docs) for a one-time fee of $49.**
+**For detailed documentation and tutorials, see the comprehensive guides in the docs directory.**
 
 ## Development
 ```sh
@@ -46,7 +46,7 @@ To sync your project with the latest Speedrail improvements:
 
 ```sh
 # one time only
-git remote add speedrail https://github.com/ryanckulp/speedrail.git
+git remote add speedrail https://github.com/yourusername/speedrail.git
 
 # when you notice Speedrail updates on GitHub
 git pull
@@ -82,3 +82,6 @@ rubocop -a # automatically fixes "safe" issues, less aggressive than -A (upperca
 
 ## Contributing
 anyone is welcome to submit a PR with improvements of any kind.
+
+## Credits
+Original template created by [@ryanckulp](https://twitter.com/ryanckulp).
