@@ -24,11 +24,19 @@ module Speedrail
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    # Allow cross origin requests
+    # Allow cross origin requests (configure for your specific domains in production)
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :patch, :put, :delete]
+        if Rails.env.development?
+          origins '*' # Allow all origins in development
+        else
+          # Configure specific domains for production
+          origins Rails.application.credentials.allowed_origins || []
+        end
+        resource '*', 
+          headers: :any, 
+          methods: [:get, :post, :patch, :put, :delete, :options],
+          credentials: false
       end
     end
 
